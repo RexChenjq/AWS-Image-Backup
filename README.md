@@ -20,6 +20,7 @@ Lambda-AMI-Backup.py
 Lambda-Backup-Purge.py
 
 5.Set a Cron job in Cloudwatch running every 12am to backup and another job running every 1am to purge. Set the cron jobs as triggers of the two Lambda functions
+
 Take Sydney-Region for example 
 - (00 13 ? * * * ) to backup
 - (00 14 ? * * * ) to purge

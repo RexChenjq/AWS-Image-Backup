@@ -1,3 +1,11 @@
+# Author Rex Chen
+#
+# 1. Find all instances with a tag "Backup":"True" and put them into the list "to_tag"
+# 2. Create AMIs for all instances
+# 3. Create Tag "DeleteOn" based on retention policy and today's date
+# 4. Send SNS email notifications
+
+
 import boto3
 import collections
 import datetime

@@ -1,3 +1,10 @@
+# Author Rex Chen
+#
+# 1. Find all instances with a tag "Backup":"True" and put them into the list "to_tag"
+# 2. Find all AMIs for instances in the list "to_tag"
+# 3. Deregister all AMIs and delete all Snapshots if the corresponding Instance has the up-to-date backup and passed the retention policy
+# 4. Send SNS email notifications
+
 import boto3
 import collections
 import datetime
